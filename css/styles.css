@@ -1,135 +1,116 @@
-*,
-*::before,
-*::after {
+/* common */
+* {
   box-sizing: border-box;
 }
 
 body {
-  font-family:
-    'Helvetica Neue',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
+  background-color: #fff;
+  color: #333;
+  font:
+    1.2em / 1.5 Helvetica Neue,
+    Helvetica,
+    Arial,
     sans-serif;
-  line-height: 1.5;
-  color: #2a2a2a;
-}
-
-button,
-label {
-  cursor: pointer;
-}
-
-input {
-  font: inherit;
-}
-
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.box {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-}
-
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.car-search {
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.car-group {
-  margin-right: 10px;
-}
-
-.car-input,
-.car-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.car-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.car-button:hover {
-  background-color: #0056b3;
-}
-
-.car-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
-.car-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+button {
+  cursor: pointer;
+}
+
+section {
+  padding: 50px 0;
   text-align: center;
 }
 
-.car-image {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 10px;
-  object-fit: cover;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.car-title {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 5px;
-}
+/* components */
 
-.car-type {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 5px;
-}
-
-.car-price {
+.task-title {
   font-size: 20px;
-  color: #ff6600;
-  font-weight: bold;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+
+.module-title {
+  text-align: center;
+}
+
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+
+  margin: 5px;
+}
+
+.even {
+  background-color: #8bc34a;
+}
+
+.odd {
+  background-color: #ffed3b;
+}
+
+/* form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.contact-form-input {
+  height: 40px;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form-btn {
+  margin-top: 20px;
+}
+
+.success {
+  outline: 3px solid greenyellow;
+}
+
+.error {
+  outline: 3px solid red;
+}
+
+span {
+  text-decoration: underline;
+}
+
+/* Box */
+.box {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed red;
+  margin: 10px;
 }

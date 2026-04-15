@@ -1,31 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Event listeners</title>
+    <title>DOM Tasks</title>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <div class="container">
+      <!-- Task 1 -->
+      <h1 id="title">Базові операції з DOM</h1>
 
-    <form action="submit" class="js-form car-search">
-      <div class="car-group">
-        <input type="text" name="query" class="car-input" placeholder="Пошук" />
-      </div>
-      <div class="car-group">
-        <select name="options" class="car-select">
-          <option value="car">Марка</option>
-          <option value="type">Модель</option>
-        </select>
-      </div>
-      <button type="submit" class="car-button">Пошук</button>
-    </form>
+      <ul class="list">
+        <li data-topic="navigation">
+          <h3>Навігація по DOM</h3>
+          <p>Доступ до DOM починається з document.</p>
+        </li>
 
-    <ul class="js-list car-list"></ul>
+        <li data-topic="search">
+          <h3>Пошук елементів</h3>
+          <p>querySelector — сучасний стандарт.</p>
+        </li>
+
+        <li data-topic="props">
+          <h3 class="completed">Властивості та атрибути</h3>
+          <p>textContent, classList, getAttribute...</p>
+        </li>
+
+        <li data-topic="manipulation">
+          <h3>Створення та видалення</h3>
+          <p>Можна створювати нові елементи.</p>
+        </li>
+      </ul>
+
+      <!-- Task 3 -->
+      <p class="task-title">Task 3</p>
+
+      <form class="contact-form js-contact-form">
+        <input
+          name="userName"
+          type="text"
+          class="contact-form-input js-username-input"
+          data-length="8"
+          placeholder="Your name"
+        />
+
+        <label class="js-policy-label">
+          <input type="checkbox" name="accept" class="js-policy-checkbox" />
+          Я <span class="js-username-output">Anonymous</span> погоджуюсь
+        </label>
+
+        <button type="submit">Відправити</button>
+      </form>
+
+      <!-- Task 4 -->
+      <p class="task-title">Task 4</p>
+
+      <div>
+        <div class="box"></div>
+        <button id="decrease">Зменшити</button>
+        <button id="increase">Збільшити</button>
+      </div>
+    </div>
+
     <script src="./js/task-1.js"></script>
-    <script src="./js/task-2.js"></script>
-    <script src="./js/task-3.js"></script>
   </body>
 </html>
